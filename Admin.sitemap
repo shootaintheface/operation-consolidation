@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Defualt.aspx" title="Default"
+                 description="">
+
+        <siteMapNode url ="~/Basic Site/MainFront.aspx" title="Home"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/MajorEvents.aspx" title="Events"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/Extras.aspx" title="Extras"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/PastNews.aspx" title="Old News"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/About.aspx" title="About"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/ContactUs.aspx" title="Contact Us" description="Contact Us Page"></siteMapNode>
+
+        <siteMapNode url="~/Site Maintinace/MaintinanceHome.aspx" title="Site Maintinance"  description="Authorized Users Only">
+            <siteMapNode url="~/Site Maintinace/ChangeNews.aspx" title="Upload News"  description="Add news Pictures" />
+            <siteMapNode url="~/Site Maintinace/ChangeNewsArticle.aspx" title="News Article"  description="Add news Articles." />
+            <siteMapNode url="~/Site Maintinace/ManageNews.aspx" title="Manage Front Page" description="Change front page information"/>
+        </siteMapNode>
+        <siteMapNode url ="~/S1/S1Home.aspx" title ="S1" description="S1 Stuff">
+        </siteMapNode>
+        <siteMapNode url ="~/MSIII/MSIIIHome.aspx" title="MSIII Home" description="MSIII Opord Uplpoad/Download"></siteMapNode>
+        <siteMapNode url ="~/Cadre/CadreHome.aspx" title="Cadre Home" description="Cadre Class Management"></siteMapNode>
+
+        <siteMapNode url ="~/Login/BackDoor.aspx" title="Navigation Home"></siteMapNode>
+
+    </siteMapNode>
+</siteMap>

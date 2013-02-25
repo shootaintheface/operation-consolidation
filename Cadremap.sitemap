@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Defualt.aspx" title="Default"
+                 description="">
+
+        <siteMapNode url ="~/Basic Site/MainFront.aspx" title="Home"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/MajorEvents.aspx" title="Events"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/Extras.aspx" title="Extras"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/PastNews.aspx" title="Old News"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/About.aspx" title="About"></siteMapNode>
+        <siteMapNode url ="~/Basic Site/ContactUs.aspx" title="Contact Us" description="Contact Us Page"></siteMapNode>
+
+        <siteMapNode url="~/Cadre/CadreHome.aspx" title="Cadre Home">
+            <siteMapNode url ="~/Cadre/CadreClassList.aspx" title="Class Roster"></siteMapNode>
+            <siteMapNode url="~/Cadre/CadreOpOrdLookUp.aspx" title="OPORD List"></siteMapNode>
+            <siteMapNode url="~/Cadre/AddCalendarEvent.aspx" title="Update Class Calendar"></siteMapNode>
+            <siteMapNode url="~/Cadre/CadreAddNotes.aspx" title="Update Class Notes"></siteMapNode>
+        </siteMapNode>
+        <siteMapNode url ="~/Login/BackDoor.aspx" title="Navigation Home"></siteMapNode>
+    </siteMapNode>
+</siteMap>

@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterFrontPage.master.cs" Inherits="MasterFrontPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 142px;
+            height: 195px;
+        }
+        .style3
+        {
+            font-size: xx-large;
+            color: #0000FF;
+            }
+        .style5
+        {
+            width: 168px;
+        }
+        .style6
+        {
+            width: 40px;
+        }
+    </style>
+</head>
+<body bgcolor="#dbdbe8">
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td rowspan="2" class="style5">
+                    <asp:Image ID="Image2" runat="server" BorderStyle="Solid" 
+                        ImageUrl="~/Images/ROTC PIC.bmp" />
+                </td>
+                <td class="style3" colspan="2">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/ROTCbanner.jpg" 
+                        Width="100%" />
+                </td>
+                <td class="style3" rowspan="2">
+                    &nbsp;
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+                        StartingNodeUrl="~/Defualt.aspx" ShowStartingNode="False" />
+                    &nbsp;&nbsp;
+                    <asp:Image ID="Image3" runat="server" BorderStyle="Solid" 
+                        ImageUrl="~/Images/ROTC PIC.bmp" style="color: #000000" />
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#B5C7DE" 
+                        DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" 
+                        Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" 
+                        StaticSubMenuIndent="10px" Orientation="Horizontal">
+                        <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#B5C7DE" />
+                        <DynamicSelectedStyle BackColor="#507CD1" />
+                        <DynamicItemTemplate>
+                            <%# Eval("Text") %>
+                        </DynamicItemTemplate>
+                        <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#507CD1" />
+                    </asp:Menu>
+                &nbsp;</td>
+                <td style="text-align: right">
+                    <asp:Label ID="lblLogInStatus" runat="server"></asp:Label>
+                    <asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Login" />
+                </td>
+            </tr>
+        </table>
+        <table class="style1" 
+            
+            style="table-layout: fixed; width: 100%; margin-right: 0px; height: 289px;" 
+            frame="box">
+            <tr>
+                <td class="style6" style="border-style: solid" nowrap="nowrap">
+                    <br />
+                    Links to our other Sites:<br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server" 
+                        NavigateUrl="http://www.facebook.com/group.php?gid=339267848176">Facebook</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server" 
+                        NavigateUrl="http://www.mtsu.edu/arotc1/">MTSU School Website</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink4" runat="server" 
+                        NavigateUrl="http://www.blueraiderbattalion.com/index.html">Blue Raider Battalion</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink5" runat="server" 
+                        NavigateUrl="https://www.us.army.mil/suite/login/login.fcc?TYPE=33554433&amp;REALMOID=06-56ac77cd-98b2-1009-96b6-84a74d100cb3&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;SMAGENTNAME=-SM-Dgs1Cox22Zw5Nc04OY%2bt%2bTd77GJKuMDDt2tYw6HY7Aue1oe%2fViOQSbne%2fSIpOsA5&amp;TARGET=-SM-http%3a%2f%2fwww.us.army.mil%2fSmKBAuth%2fLoginEnrollmentForms%2fSmKBAuth.fcc%3fTYPE%3d33554432%26REALMOID%3d06--b476a858--73dc--10a1--9a8e--832f882fff3d%26GUID%3d%26SMAUTHREASON%3d0%26METHOD%3dGET%26SMAGENTNAME%3d--SM--vXO-%2bYjxhl6RVVzPhP5qziY3Qqv58168oja81Ux8nYYl9AjW7Fl7DaNcXHG14hZkk%26TARGET%3d--SM--http-%3a-%2f-%2fwww-.us-.army-.mil-%2fsuite-%2fportal-%2fdefaulthomepage-.do">AKO Homepage</asp:HyperLink>
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="rotc.blackboard.com">Blackboard</asp:HyperLink>
+                    <br />
+                    <br />
+                </td>
+                <td class="style2" style="border-style: solid">
+                    <asp:ContentPlaceHolder ID="FrontEndPlaceHoder" runat="server">
+                        <p style="width: auto; height: auto">
+                            <br />
+                        </p>
+                        <p>
+                        </p>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <br />
+        Contact by phone at: 615-898-2470 or by email: <a href="mailto:arotc@mtsu.edu">
+        arotc@mtsu.edu</a>. You can also stop by our building on campus at Forrest Hall 
+        first floor.</div>
+    </form>
+</body>
+</html>
